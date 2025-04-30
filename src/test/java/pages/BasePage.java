@@ -10,4 +10,6 @@ public class BasePage {
         this.context = context;
         PageFactory.initElements(context.driver, this);
     }
+
+
 }

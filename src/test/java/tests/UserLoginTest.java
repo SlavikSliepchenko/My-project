@@ -1,13 +1,10 @@
 package tests;
 
-import io.qameta.allure.Description;
 import org.junit.jupiter.api.Test;
-import pages.CandidatePage;
 import pages.SkillMainPage;
 import utils.ConfigurationReader;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class UserLoginTest extends BaseTest {
 
@@ -19,8 +16,7 @@ public class UserLoginTest extends BaseTest {
         SkillMainPage skillMainPage = new SkillMainPage(context);
         headerText = skillMainPage.login().header.getText();
         assertEquals("Панель управления", headerText);
-
+    }
 
     }
 
-}
